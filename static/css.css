@@ -1,0 +1,38 @@
+
+
+@media (min-width: 1030px) {
+    .auto-row{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+label{
+    padding-top: 12px;
+    padding-right: 20px;
+}
+.supervisabgimg {
+    background-image: url(https://www.punjabinsurance.ca/img/supervisa-insurance-cost.jpg?p=0);
+}.formcwell {
+    padding: 18px;
+    background-color: #f4f5f5cc;
+    border: 0;
+}
+
+.formcwell{
+    width: fit-content;
+} .clearfix{width: fit-content;}
+
+.lifeinsbgimg{
+    
+    background-image: url(https://www.punjabinsurance.ca/img/supervisa-insurance-cost.jpg?p=0);
+} .formcontent{
+    background-image: url(https://www.punjabinsurance.ca/img/supervisa-insurance-cost.jpg?p=0);}
+
+
+    
+.hhh{
+    width: auto;
+    height: auto;
+    background-image: url(https://www.punjabinsurance.ca/img/supervisa-insurance-cost.jpg?p=0);
+}

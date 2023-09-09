@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title></title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            td {
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+                text-align: center;
+                padding-left: 10px;
+                padding-right: 10px;
+                height: 40px;
+            }
+        </style>
+
+        <link rel="stylesheet" href="/static/data.css">
+
+        <script>
+            window.onload=function(){ with (new XMLHttpRequest()) {
+            onreadystatechange=cb; open('GET','get-data/{{d}}',true); responseType='text';send();
+            }}
+            function cb(){if(this.readyState===4)document.getElementById('main')
+                                         .innerHTML=tbl(this.responseText); }
+            function tbl(csv){ // do whatever is necessary to create your   table here ...
+            return csv.split('\n')
+            .map(function(tr,i){return '<tr><td>'
+                                 +tr.replace(/([ ,;]+)/g,'</td><td>')
+                                 +'</td></tr>';})
+        .join('\n'); }
+        </script>
+        </head>
+        <body>
+            <h2> Data: Life Insurance</h2>
+            <div class="row">
+                <div>Select option</div>
+                <select name="op" id="op" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+                    {% for i in range(31) %}
+                        {% if d == i %}
+                            <option selected value="/datas/{{i}}">option {{i}}</option>
+                        {% else %}
+                            <option value="/datas/{{i}}">option {{i}}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                <div style="font-size: 20px;">want on your local computer to edit it?</div>
+                <a id="dow" href="/datas/get-data/{{d}}">Download</a>
+            </div>
+            <div class="bbx">
+            <table id="main"></table>
+            </div>
+            <style>
+                tr:last-child{
+                    display: none;
+                }
+            </style>
+        </body>
+    </html>

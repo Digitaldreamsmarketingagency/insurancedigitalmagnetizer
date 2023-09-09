@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="section-padding-top">
+    <div class="container-fluid formcontent">
+    <div class="row lifeinsbgimg bbyy">
+    <div class="col-md-6 col-lg-6 col-xl-7 paddingzero">
+    <div class="subhead"><h3>Registered Retirement Savings Plan (RRSP)</h3></div>
+    </div>
+    <div class="col-md-6 col-lg-6 col-xl-5 paddingzero">
+    <div class="formcwell clearfix">
+    <div class="text-center formhead">
+    <h4>Registered Retirement Savings Plan (RRSP)</h4>
+    <p></p>
+    <hr>
+    </div>
+    <form method="post" accept-charset="utf-8" id="rrspinsform" action="/store-data/2"><div style="display:none;"></div> <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="tname">Name <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="tname" id="tname" aria-describedby="tname_status">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="contact_email">Email <span class="star">*</span></label>
+    <input required type="email" class="form-control form-design" name="contact_email" id="contact_email" aria-describedby="contact_email_status">
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="tphone">Phone <span class="star">*</span></label>
+    <input required type="number" class="form-control form-design" name="tphone" id="tphone" aria-describedby="tphone_status">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="currentrrsp">Current RRSP Investments ($) <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="currentrrsp" id="currentrrsp" aria-describedby="currentrrsp_status">
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group has-feedback">
+    <label for="annualrrsp">Annual RRSP contribution <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="annualrrsp" id="annualrrsp" aria-describedby="annualrrsp_status">
+    </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group has-feedback">
+    <label for="annual_rate_of_return">Anticipated annual rate of return <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="annual_rate_of_return" id="annual_rate_of_return" aria-describedby="annual_rate_of_return_status">
+    </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group has-feedback">
+    <label for="retirement">Number of years to retirement </label>
+    <input required type="number" class="form-control form-design" name="retirement" id="retirement" aria-describedby="retirement_status">
+    </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="clearfix"></div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <noscript><p style="color: red;">Please enable JavaScript to continue</p> </noscript>
+    <div id="email_error_loc"></div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+    <input type="submit" id="rrspinssubmit" class="readmore-blue submit-form" value="Get Quote" style="height: 40px;">
+    </div>
+    </form> </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="container formcontent">
+    <div class="row">
+    <div class="col-md-12"><br>
+    <p>An RRSP is a retirement plan that we register and that you or your spouse or common-law partner establish and contribute to. Deductible RRSP contributions can be used to reduce your tax.</p>
+    <p>Any income you earn in the RRSP is usually exempt from tax for the time the funds remain in the plan. However, you generally have to pay tax when you cash in, make withdrawals, or receive payments from the plan.</p>
+    <p>A registered retirement savings plan, or RRSP, is a savings plan for individuals which allows them to defer tax on money to be used for retirement. Contribution limits for registered retirement savings plans are based on income and are tax deductible at the time of deposit. Tax is paid when investment and interest or dividend income is withdrawn</p>
+    <h4 class="title_custom">Tax tips for retirement income earners</h4>
+    <ol>
+    <li>Take advantage of the federal age tax credit on your tax return. If you're 65 or over, you may be eligible for an additional age deduction, depending on your income.</li>
+    <li>Use the pension tax credit. If you are 65 years of age or older, the first $1,000 of pension income is eligible for a 17% federal tax credit as well as a provincial tax credit that varies from province to province (some exceptions may apply).</li>
+    <li>Generate income from non-registered investments. It's generally better to draw income from non-registered investments before you use tax-deferred, registered assets.</li>
+    <li>Elect on your tax return to include all Canadian dividends received by the lower-income spouse as part of your income in order to maximize the spousal tax credit. This may not be advantageous in all situations, so be sure to check with your tax professional.</li>
+    <li>Assign 50% of CPP benefit payments to the lower-income spouse in order to tax the income at a lower rate. This may help you reduce or avoid the impact of the Old Age Security (OAS) clawback.</li>
+    <li>Make sure additional income doesn't have a negative impact on government payments and credits you may be eligible for. Before you withdraw additional income from your RIF or other retirement plan, find out what impact it may have.For example, if your income exceeds $62,144*, you would be subject to a clawback tax on your OAS payments. Age credits, GST credits and provincial tax credits could also be affected. Check Canada Customs and Revenue Agency Tax Guides and your provincial tax office for details.</li>
+    <li>Maximize spousal RSP contributions for the spouse who is expected to have the lower taxable income at retirement. This will permit more retirement income to be taxed at the lower rates.</li>
+    <li>Apply for the GST credit every year. You may qualify after you retire, even if you didn't before.</li>
+    <li>Combine your - and your spouse's - charitable donations on a single tax return to maximize the tax credit.</li>
+    <li>Transfer unused age, pension, disability, tuition and education tax credits from the lower-income spouse to the higher-income spouse</li>
+    </ol>
+    <br>
+    </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}

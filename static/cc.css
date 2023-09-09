@@ -1,0 +1,73 @@
+@media (min-width: 900px) {
+  .qqqq {
+    display: flex;
+    width: 500px;
+  }
+  .wwww {
+    display: flex;
+    width: 800px;
+  }
+  .oooo {
+    display: flex;
+    width: 500px;
+  }
+}
+
+.title_custom {
+  color: rgb(0, 151, 58) !important;
+}
+
+.formhead > h4 {
+  color: rgb(0, 151, 58) !important;
+}
+
+.formcontent .formhead hr {
+  display: block;
+  height: 1px;
+  border-top: 1px solid #00cc30 !important;
+  margin: 1em;
+}
+
+.subhead > h3 {
+  color: #008a20 !important;
+}
+
+input[type="submit"] {
+  background-color: #008a20 !important;
+}
+
+.bbgg {
+  background-image: url("https://lsminsurance.ca/images/shutterstock_151928681.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bbgy {
+  background-image: url("https://www.unikglobalservices.com/wp-content/uploads/2019/12/study-in-canada.jpg") !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bbyy {
+    background-image: url("https://www.hsbc.com/-/files/hsbc/investors/hsbc-results/2022/annual/images/232102-our-investment-case-768x576.jpg?h=576&w=768&la=en-GB&hash=112B51D60F5FF21C4A2D82C862C24E82") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.bbee {
+    background-image: url("https://www.metapunk.to/images/O_k7r_I2oZTsAUNMRe1K4E8x2uz2Ak42g-ysb3LQHVc/s:1000:420/mb:500000/ar:1/aHR0cHM6Ly93d3cu/bWV0YXB1bmsudG8v/cmVtb3RlaW1hZ2Vz/L3VwbG9hZHMvYXJ0/aWNsZXMvNmF3eTVo/c2FlajFyOHViN293/bWYuanBn") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bbrr {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/healthinsurances3.com/prod/imagegallery/How-Do-I-Use-The-Online-Premium-Calculator.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bbpp {
+    background-image: url("https://www.manulifeim.com/content/dam/mim-ca/viewpoints/images/viewpoints-tax-planning-registered-education-savings-plans-RESPs-the-facts-cover-1040x425.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

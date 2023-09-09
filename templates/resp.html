@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="section-padding-top">
+    <div class="container-fluid formcontent traegerpage">
+        <div class="row topbgimg bbpp">
+            <div class="col-md-6 col-lg-6 col-xl-7 paddingzero">
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-5 paddingzero">
+                <div class="formcwell clearfix">
+                    <div class="text-center formhead">
+                        <h4>Contact us to know more</h4>
+                        <p></p>
+                        <hr>
+                    </div>
+                    <form method="post" accept-charset="utf-8" id="respform" action="/store-data/0">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group has-feedback">
+                                <label for="name">Name <span class="star">*</span></label>
+                                <input required type="text" class="form-control form-design" id="name"
+                                    aria-describedby="name_status" name="name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group has-feedback">
+                                <label for="email">Email <span class="star">*</span></label>
+                                <input required type="email" class="form-control form-design" id="email"
+                                    aria-describedby="email" name="email">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group has-feedback">
+                                <label for="phone">Phone <span class="star">*</span></label>
+                                <input required type="number" class="form-control form-design" id="phone"
+                                    aria-describedby="phone_status" name="phone">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group has-feedback">
+                                <label for="childage">Child Age <span class="star">*</span></label>
+                                <input required type="number" class="form-control form-design" id="childage"
+                                    aria-describedby="childage_status" name="childage">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group has-feedback">
+                                <label for="annualresp">How much amount want to start with ? <span
+                                        class="star">*</span></label>
+                                <input required type="text" class="form-control form-design" name="annualresp"
+                                    id="annualresp" aria-describedby="annualresp_status">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="clearfix"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <noscript>
+                                    <p style="color: red;">Please enable JavaScript to continue</p>
+                                </noscript>
+                                <div id="email_error_loc"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <input type="submit" style="height: 40px;" id="Contact_us_request" class="submit-form"
+                                    value="Get Quote">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container formcontent traegerpage">
+        <div class="row">
+
+            <div class="col-md-6 paddingzero">
+                <img src="https://kiiky.com/wp-content/uploads/2021/07/what-degree-do-you-need-to-become-a-teacher-in-canada.jpg"
+                    class="img img-responsive" alt="" style="padding-right:10px;">
+            </div>
+            <div class="col-md-6 paddingzero">
+                <div class="desc">
+                    <h4 class="title_custom">Education Awareness Program</h4><br>
+                    <p>Punjab Insurance is bringing for you a <strong>3 month education awareness program</strong>, a
+                        golden opportunity for your kids.</p>
+                    <p>This opportunity you can only avail in March and April, the reason being the popular diploma plan
+                        will be discontinued on <strong> 26th May 2023</strong>.</p>
+                    <p>In this diploma plan you can get <strong>15% additional bonus up to $7500</strong></p>
+                    <p>The opportunity won't be available again.</p>
+                    <p>Contact us today to get more information</p>
+                    <p>Certain conditions apply<span style="color:red">*</span> </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+    </div>
+    <div class="container-fluid formcontent traegerpage">
+        <div class="row">
+
+            <div class="video_d embed-responsive embed-responsive-16by9">
+                <div class="overlay"></div>
+                <video playsinline="playsinline" autoplay="autoplay" muted="" loop="loop" controls=""
+                    class="embed-responsive-item">
+                    <source src="https://www.punjabinsurance.ca/video/RESP_English.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

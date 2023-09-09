@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="t-nn">Photo Galary</div>
+
+<div class="row-a">
+    <div class="p-grid-p" style="grid-template-columns: repeat(auto-fit, minmax(300px, 360px)) !important;
+    width: calc(100vw - 20px);
+    max-width: 1100px;">
+        {% for i in range(8) %}
+        <div class="card-p" style="
+        aspect-ratio: 2/1.1">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

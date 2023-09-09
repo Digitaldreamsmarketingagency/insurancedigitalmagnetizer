@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="section-padding-top">
+    <div class="container-fluid formcontent">
+    <div class="row topbgimg bbyy">
+    <div class="col-md-6 col-lg-6 col-xl-7 paddingzero">
+    <div class="subhead"><h3>Buy Travel Insurance Online</h3></div>
+    </div>
+    <div class="col-md-6 col-lg-6 col-xl-5 paddingzero">
+    <div class="formcwell clearfix">
+    <div class="text-center formhead">
+    <h4>Guaranteed Canadian Visitor Insurance Lowest Rate Comparison.</h4>
+    <p></p>
+    <hr>
+    </div>
+    <form method="post" accept-charset="utf-8" id="visitorinsform" action="/store-data/1"><div style="display:none;"></div> <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="tname">Name <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="name" placeholder="Name" id="tname" aria-describedby="tname_status">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="contact_email">Email <span class="star">*</span></label>
+    <input required type="email" class="form-control form-design" name="email" placeholder="Email" id="contact_email" aria-describedby="contact_email_status">
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="tphone">Phone <span class="star">*</span></label>
+    <input required type="number" class="form-control form-design" name="phone" placeholder="Phone Number" id="tphone" aria-describedby="tphone_status">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="primary_destination">Primary destination <span class="star">*</span></label>
+    <select class="form-control" name="primary_destination" id="primary_destination" aria-describedby="primary_destination_status">
+    <option value="" selected="">Please choose</option>
+    <option value="Alberta">Alberta</option>
+    <option value="British Columbia">British Columbia</option>
+    <option value="Manitoba">Manitoba</option>
+    <option value="New Brunswick">New Brunswick</option>
+    <option value="Newfoundland">Newfoundland</option>
+    <option value="North West Territories">North West Territories</option>
+    <option value="Nova Scotia">Nova Scotia</option>
+    <option value="Nunavut">Nunavut</option>
+    <option value="Ontario">Ontario</option>
+    <option value="Prince Edward Island">Prince Edward Island</option>
+    <option value="Quebec">Quebec</option>
+    <option value="Saskatchewan">Saskatchewan</option>
+    <option value="Yukon Territory">Yukon Territory</option>
+    </select>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="departeredate">Start date of coverage <span class="star">*</span></label>
+    <input required type="date" class="form-control form-design hasDatepicker" placeholder="Start Date" name="departeredate" id="departeredate" aria-describedby="departeredate_status" autocomplete="off">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="returndate">End date of coverage <span class="star">*</span></label>
+    <input required type="date" class="form-control form-design hasDatepicker" placeholder="End Date" name="returndate" id="returndate" aria-describedby="returndate_status" autocomplete="off">
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="coverage" class="control-label">Coverage(CAD)</label>
+    <select class="form-control" id="coverage" name="coverage">
+    <option value="10000">10,000</option>
+    <option value="15000">15,000</option>
+    <option value="25000">25,000</option>
+    <option value="30000">30,000</option>
+    <option value="50000">50,000</option>
+    <option value="100000" selected="">100,000</option>
+    <option value="150000">150,000</option>
+    <option value="200000">200,000</option>
+    <option value="250000">250,000</option>
+    <option value="300000">300,000</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="sphone" class="control-label">Number of Visitors (max 2)</label>
+    <select class="form-control" name="ntravellers" id="ntravellers">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    </select>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    
+    <div class="col-lg-6 col-md-6 col-sm-6 tr2" style="display: none;">
+    <div class="form-group has-feedback">
+    <label for="medical_cond2">Pre-existing / 2nd Person</label>
+    <select class="form-control" name="medical_cond2" id="medical_cond2">
+    <option value="no"> No</option>
+    <option value="yes"> Yes </option>
+    </select>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <noscript><p style="color: red;">Please enable JavaScript to continue</p> </noscript>
+    <div id="email_error_loc"></div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+    <input type="submit" id="visitorinssubmit" class="readmore-blue submit-form" value="Get Quote" style="text-align: center;height:40px;">
+    </div>
+    </form> </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="container formcontent">
+    <div class="row">
+    <div class="col-md-12">
+    <h4 class="title_custom">Cheapest Travel Insurance</h4>
+    <p>Travelling abroad entails lot of planning to make it a perfect vacation. However, to make sure that your vacation is a complete success, <strong>travel insurance</strong> is an absolute necessity. Your trip abroad should be without hassles and worries, and <strong>comprehensive travel insurance</strong> provides you with the same. Whether you lose your baggage or passport, or even need some medical support on your trip, <strong>overseas travel insurance</strong> will make sure you get what you need. Go on your vacation without any worries in the back of your mind; buy your <strong>travel insurance policy.</strong> </p>
+    <p>At Punjab Insurance protect the cost of your trip and ensure that you are covered for medical expenses while overseas. Buy your insurance online or contact our office. We offer a complete selection of travel insurance options; Health and Medical; Trip Cancellation; Baggage; and more. We have exclusive student and youth rates. If you are extending your travel, call us for an insurance extension. Don't think to travel without insurance!.Travel insurance enables you to explore and enjoy new destination with heartiness. With our wide range of travel insurance plans that encompasses both <strong>business and leisure travel</strong>, we always have a plan that will always best suit your travelling purpose and that too at a cost that is soft on your budget. So, be rest assured and enjoy your travelling without worries.</p>
+    <h4 class="title_custom">Features:</h4>
+    <ul>
+    <li><strong>Emergency Medical Expenses:</strong> Covers medical costs incurred due to illness or accident including medically necessary and prescribed emergency evacuation. It covers out-patient, in-patient, medical aid, therapies and diagnostic tests as described in the policy. </li>
+    <li><strong>Emergency Medical Evacuation:</strong> Evacuation to the home country is covered up to the medical sum insured. </li>
+    <li><strong>Repatriation of remains:</strong> Covers the funeral expenses or expenses of repatriating the remains back to your home country, in case of death of the insured overseas.</li>
+    <li><strong>Emergency Dental Expenses:</strong> Covers acute anesthetic treatment of natural teeth.</li>
+    <li><strong>Hospital Expenses:</strong> Pays a daily allowance as stated in the policy in the event of hospitalisation either due to sickness or accidents. </li>
+    <li><strong>Accidental Death and Permanent Total Disability Common Carrier:</strong> The company will pay the sum insured specified in the schedule in addition to the sum insured specified under the Personal Accident section, If the insured sustains Accidental bodily injury during the course of the journey while travelling in a common carrier such as rail, tram or airplane; and such bodily injury results in death or permanent total disability. </li>
+    <li><strong>Flight delay:</strong> Compensation if the aircraft is delayed for more than 12 hours than the original scheduled departure time. </li>
+    <li><strong>Loss of Passport:</strong> Expenses incurred in obtaining a fresh new passport. </li>
+    <li><strong>Loss of Checked Baggage:</strong> Compensation for the permanent loss of checked-in-baggage. </li>
+    <li><strong>Financial Emergency Assistance:</strong> Insurance cover is provided in the event of the insured person getting into a financial emergency due to theft, robbery of his/her travel funds. A fixed sum is paid as emergency assistance up to the limits specified under the policy. </li>
+    <li><strong>Hotel Accommodation:</strong> Pays for the cost of hotel accommodation, if the insured person sustains bodily injury or sickness which directly and independently of all other causes results in the hospital stays as an in-patient and misses flight back to the country of residence. </li>
+    <li><strong>Hijack Distress Allowance:</strong> Insurance cover is provided in the event of the hijack of the air or sea common carrier in which the insured person is travelling whilst on the trip abroad during the period of insurance. An allowance will be paid for each day of the hijack up to the limits specified under the policy. </li>
+    </ul>
+    <br>
+    </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}

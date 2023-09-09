@@ -1,0 +1,323 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="section-padding-top">
+    <div class="container-fluid formcontent">
+        <div class="row lifeinsbgimg bbgg">
+            <div class="col-md-6 col-lg-6 col-xl-7 paddingzero">
+                <div class="subhead">
+                    <h3>Mortgage Insurance</h3>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-5 paddingzero">
+                <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+                <div class="formcwell clearfix">
+                    <div class="text-center formhead">
+                        <h4>Mortgage Life Insurance</h4>
+                        <p></p>
+                        <hr>
+                    </div>
+                    <form method="post" accept-charset="utf-8" id="lifeinsform" action="/store-data/9">
+                        <div style="display:none;">value="POST"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="instype">Insurance Type <span class="star">*</span></label>
+                                <select class="form-control" name="instype" id="instype"
+                                    aria-describedby="instype_status">
+                                    <option value="">Please choose</option>
+                                    <option value="Term Life Insurance">Term Life Insurance</option>
+                                    <option value="Whole Life Insurance">Whole Life Insurance</option>
+                                    <option value="Mortgage Insurance" selected="">Mortgage Insurance</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="pi">Product Type <span class="star">*</span></label>
+                                <select class="form-control" name="pi" id="pi" aria-describedby="pi_status">
+                                    <option value="">Please choose</option>
+                                    <option value="10 Year Term">10 Year Term</option>
+                                    <option value="11-14 Year Term">11-14 Year Term</option>
+                                    <option value="15 Year Term">15 Year Term</option>
+                                    <option value="16-19 Year Term">16-19 Year Term</option>
+                                    <option value="20 Year Term">20 Year Term</option>
+                                    <option value="21-24 Year Term">21-24 Year Term</option>
+                                    <option value="25 Year Term">25 Year Term</option>
+                                    <option value="26-29 Year Term">26-29 Year Term</option>
+                                    <option value="30 Year Term">30 Year Term</option>
+                                    <option value="31-34 Year Term">31-34 Year Term</option>
+                                    <option value="35 Year Term">35 Year Term</option>
+                                    <option value="36-39 Year Term">36-39 Year Term</option>
+                                    <option value="40 Year Term">40 Year Term</option>
+                                    <option value="All Products">All Products</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="faceamount">Face Amount <span class="star">*</span></label>
+                                <select class="form-control" name="faceamount" id="faceamount"
+                                    aria-describedby="faceamount_status">
+                                    <option value="">Please choose</option>
+                                    <option value="25000">$25,000</option>
+                                    <option value="30000">$30,000</option>
+                                    <option value="35000">$35,000</option>
+                                    <option value="40000">$40,000</option>
+                                    <option value="45000">$45,000</option>
+                                    <option value="50000">$50,000</option>
+                                    <option value="55000">$55,000</option>
+                                    <option value="60000">$60,000</option>
+                                    <option value="65000">$65,000</option>
+                                    <option value="70000">$70,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="80000">$80,000</option>
+                                    <option value="85000">$85,000</option>
+                                    <option value="90000">$90,000</option>
+                                    <option value="95000">$95,000</option>
+                                    <option value="100000" selected="">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="150000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="550000">$550,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                    <option value="2250000">$2,250,000</option>
+                                    <option value="2500000">$2,500,000</option>
+                                    <option value="2750000">$2,750,000</option>
+                                    <option value="3000000">$3,000,000</option>
+                                    <option value="3500000">$3,500,000</option>
+                                    <option value="4000000">$4,000,000</option>
+                                    <option value="4500000">$4,500,000</option>
+                                    <option value="5000000">$5,000,000</option>
+                                    <option value="6000000">$6,000,000</option>
+                                    <option value="7000000">$7,000,000</option>
+                                    <option value="8000000">$8,000,000</option>
+                                    <option value="9000000">$9,000,000</option>
+                                    <option value="10000000">$10,000,000</option>
+                                    <option value="11000000">$11,000,000</option>
+                                    <option value="12000000">$12,000,000</option>
+                                    <option value="13000000">$13,000,000</option>
+                                    <option value="14000000">$14,000,000</option>
+                                    <option value="15000000">$15,000,000</option>
+                                    <option value="16000000">$16,000,000</option>
+                                    <option value="17000000">$17,000,000</option>
+                                    <option value="18000000">$18,000,000</option>
+                                    <option value="19000000">$19,000,000</option>
+                                    <option value="20000000">$20,000,000</option>
+                                    <option value="21000000">$21,000,000</option>
+                                    <option value="22000000">$22,000,000</option>
+                                    <option value="23000000">$23,000,000</option>
+                                    <option value="24000000">$24,000,000</option>
+                                    <option value="25000000">$25,000,000</option>
+                                    <option value="26000000">$26,000,000</option>
+                                    <option value="27000000">$27,000,000</option>
+                                    <option value="28000000">$28,000,000</option>
+                                    <option value="29000000">$29,000,000</option>
+                                    <option value="30000000">$30,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="smoker">Are you a smoker? <span class="star">*</span></label>
+                                <select class="form-control" name="smoker" id="smoker" aria-describedby="smoker_status">
+                                    <option value="">Please choose</option>
+                                    <option>Smoker</option>
+                                    <option selected="">Non Smoker</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="gender">Gender <span class="star">*</span></label>
+                                <select class="form-control" name="gender" id="gender" aria-describedby="gender_status">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="firstname">First Name <span class="star">*</span></label>
+                                <input required type="text" class="form-control form-design" name="firstname"
+                                    id="firstname" aria-describedby="firstname_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="lastname">Last Name <span class="star">*</span></label>
+                                <input required type="text" class="form-control form-design" name="lastname"
+                                    id="lastname" aria-describedby="lastname_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="contact_email">Email <span class="star">*</span></label>
+                                <input required type="email" class="form-control form-design" name="contact_email"
+                                    id="contact_email" aria-describedby="contact_email_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="sphone">Telephone <span class="star">*</span></label>
+                                <input required type="number" class="form-control form-design" name="sphone" id="sphone"
+                                    aria-describedby="sphone_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="DOB">Date of birth <span class="star">*</span></label>
+                                <input required type="date" class="form-control form-design hasDatepicker" name="DOB"
+                                    id="DOB" aria-describedby="DOB_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="province" class="control-label">Your Location <span
+                                        class="star">*</span></label>
+                                <select class="form-control" name="province" id="province"
+                                    aria-describedby="province_status">
+                                    <option value="">Select Province</option>
+                                    <option value="British Columbia">British Columbia</option>
+                                    <option value="Alberta">Alberta</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                    <option value="Northwest Territories">Northwest Territories</option>
+                                    <option value="Yukon">Yukon</option>
+                                    <option value="Nunavut">Nunavut</option>
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="Ontario" selected="">Ontario</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option value="Nova Scotia">Nova Scotia</option>
+                                    <option value="New Brunswick">New Brunswick</option>
+                                    <option value="Prince Edward Island">Prince Edward Island</option>
+                                    <option value="Newfoundland &amp; Labrador">Newfoundland &amp; Labrador</option>
+                                    <option value="All Provinces">All Provinces</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="paymentmode" class="control-label">Payment mode <span
+                                        class="star">*</span></label>
+                                <select class="form-control" name="paymentmode" id="paymentmode"
+                                    aria-describedby="paymentmode_status">
+                                    <option value="Annual">Annual</option>
+                                    <option value="Semi annual">Semi annual</option>
+                                    <option value="Quarterly">Quarterly</option>
+                                    <option value="Monthly">Monthly</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="clearfix"></div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <noscript>
+                                    <p style="color: red;">Please enable JavaScript to continue</p>
+                                </noscript>
+                                <div id="email_error_loc"></div>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <input type="submit" style="height: 40px;" id="lifeinssubmit" class="submit-form"
+                                    value="Compare Rates">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="container formcontent">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="title_custom">Mortgage Insurance (Protect Your Family and Your Home)</h4>
+                <p><strong>What is mortgage life insurance?</strong></p>
+                <p>Mortgage Insurance is that insurance in which you can cover your mortgage in the major event of your
+                    death. Mortgage life insurance, also known as mortgage insurance or creditor insurance, is offered
+                    by most banks and lending institutions. It is a life insurance policy that pays the balance of your
+                    mortgage to the lending institution if a person listed on the mortgage passes away.</p>
+                <p>Purchasing your dream home is often the single largest purchase a person makes in their lifetime. But
+                    in times of unpredictable circumstances if you were to become critically ill, suffer an accident or
+                    die the financial burden of paying for the mortgage falls on the family members. Would your family
+                    be able to keep making the mortgage payments? Would they have to sell your home?</p>
+                <p>You can protect your family home with Mortgage Life Insurance, a flexible, low-cost way to protect
+                    one of your largest outstanding financial obligations.</p>
+                <h4 class="title_custom">Benefits of Mortgage Life Insurance</h4>
+                <p>Life is unpredictable. Your dreams may be shattered and your life can take a wrong turn all of a
+                    sudden. To protect all your assets and to cover your liabilities such as mortgages it is always a
+                    wise decision to be protected by buying mortgage insurance along with the bigger purchase your Home.
+                    If you die, get a life-threatening illness, or suffer an accident, your Mortgage Life Insurance can
+                    pay the following benefits - </p>
+                <ul>
+                    <li>Your entire outstanding mortgage principal amount</li>
+                    <li>Up to five years of accrued interest, and</li>
+                    <li>Any debit balance in your tax account</li>
+                </ul>
+                <h4 class="title_custom">Insurance</h4>
+                <p class="bluehead"><a href="https://www.punjabinsurance.ca/canada/life-insurance"><span
+                            class="fa fa-hand-o-right" aria-hidden="true"></span> Life Insurance</a></p>
+                <p class="bluehead"><a href="https://www.punjabinsurance.ca/term-life-insurance-quotes-canada"><span
+                            class="fa fa-hand-o-right" aria-hidden="true"></span> Term Life Insurance</a></p>
+                <p class="bluehead"><a href="https://www.punjabinsurance.ca/canada/critical-illness-insurance"><span
+                            class="fa fa-hand-o-right" aria-hidden="true"></span> Critical Illness Insurance</a></p>
+                <h4 class="title_custom">Mortgage Insurance</h4>
+                <p>In the case of an illness which has been diagnosed as fatal within one year, this insurance offers an
+                    early payout to help relieve financial concerns. For additional security, the same protection is
+                    also available to your co-borrowers or to the guarantor(s) of the mortgage.</p>
+                <p> Coverage for your mortgage can start on the date your mortgage is approved. This way, you are
+                    protected even before your new purchase closes.</p>
+                <p>If your mortgage is over $500,000, you may be eligible for partial Mortgage Life Insurance coverage.
+                </p>
+                <p>Differences between a Mortgage life insurance vs. individual life insurance</p>
+                <ul>
+                    <li>Mortgage insurance is very different from individual life insurance because the coverage
+                        declines each year or declines as the mortgage declines</li>
+                    <li>The bank is the beneficiary in mortgage insurance while in an individual life insurance policy,
+                        the insured can choose their own beneficiary.</li>
+                    <li>The coverage is not transferrable. This means that the insurance is tied to a specific mortgage.
+                        With an individual policy, the insured can keep their coverage if they move homes, switch banks,
+                        or eventually pay off their mortgage.</li>
+                    <li>The plan ends as soon as one spouse passes away. An individual policy can be set up as a joint
+                        policy, meaning a joint or multi-life policy, which allows the beneficiary to receive a double
+                        benefit in the event that both spouses pass away.</li>
+                    <li>The coverage is not convertible. A mortgage life insurance policy is not convertible to a
+                        permanent policy, but an individual term life policy is convertible to a permanent plan without
+                        a medical. This allows the insured, who may have developed some health issues over the life of
+                        the policy, to convert to a permanent level rate plan without any health questions or without
+                        any medical tests.</li>
+                </ul>
+                <p>When purchasing your new home, take the time to shop and compare lowest quotes for life insurance.
+                    Compare the cost of a term life insurance policy to a mortgage insurance policy. Chances are you'll
+                    find a term life insurance policy will have lower yearly premiums and offer more coverage and
+                    flexibility than a mortgage insurance policy. We at Punjab Insurance Inc. Offer and assure lowest
+                    quotes on term life insurance and mortgage insurance.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

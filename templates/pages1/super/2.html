@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="section-padding-top">
+    <div class="container-fluid formcontent">
+    <div class="row supervisabgimg bbee">
+    <div class="col-md-6 col-lg-6 col-xl-7 paddingzero">
+    <div class="subhead"><h3>Income requirements for Super Visa</h3></div>
+    </div>
+    <div class="col-md-6 col-lg-6 col-xl-5 paddingzero">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <div class="formcwell clearfix">
+    <div class="text-center formhead">
+    <h4>Super Visa Insurance - Rate Comparison</h4>
+    <p></p>
+    <hr>
+    </div>
+    <form method="post" accept-charset="utf-8" id="supervisainsform" action="/store-data/24"><div style="display:none;"><value="POST"></div> <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="tname">Name <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="tname" id="tname" aria-describedby="tname_status">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="contact_email">Email <span class="star">*</span></label>
+    <input required type="email" class="form-control form-design" name="contact_email" id="contact_email" aria-describedby="contact_email_status">
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="tphone">Phone <span class="star">*</span></label>
+    <input required type="number" class="form-control form-design" name="tphone" id="tphone" aria-describedby="tphone_status">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="departeredate">Start date of coverage <span class="star">*</span></label>
+    <input required type="date" class="form-control form-design hasDatepicker" name="departeredate" id="departeredate" aria-describedby="departeredate_status" autocomplete="off">
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="primary_destination">Primary destination <span class="star">*</span></label>
+    <select class="form-control" name="primary_destination" id="primary_destination" aria-describedby="primary_destination_status">
+    <option value="" selected="">Please choose</option>
+    <option value="Alberta">Alberta</option>
+    <option value="British Columbia">British Columbia</option>
+    <option value="Manitoba">Manitoba</option>
+    <option value="New Brunswick">New Brunswick</option>
+    <option value="Newfoundland">Newfoundland</option>
+    <option value="North West Territories">North West Territories</option>
+    <option value="Nova Scotia">Nova Scotia</option>
+    <option value="Nunavut">Nunavut</option>
+    <option value="Ontario">Ontario</option>
+    <option value="Prince Edward Island">Prince Edward Island</option>
+    <option value="Quebec">Quebec</option>
+    <option value="Saskatchewan">Saskatchewan</option>
+    <option value="Yukon Territory">Yukon Territory</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="sphone" class="control-label">Number of Visitors (max 2)</label>
+    <select class="form-control" name="ntravellers" id="ntravellers">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    </select>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    
+    
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 tr2" style="display: none;">
+    <div class="form-group has-feedback">
+    <label for="medical_cond2">Pre-existing / 2nd Person</label>
+    <select class="form-control" name="medical_cond2" id="medical_cond2">
+    <option value="no"> No</option>
+    <option value="yes"> Yes </option>
+    </select>
+    </div>
+    </div>
+    <div class="col-md-12">
+    <div class="clearfix"></div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <noscript><p style="color: red;">Please enable JavaScript to continue</p> </noscript>
+    <div id="email_error_loc"></div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+    <input type="submit" style="height: 40px;" id="supervisainssubmit" class="readmore-blue submit-form" value="Get Quote">
+    </div>
+    </form> </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="container formcontent">
+    <div class="row">
+    <div class="col-md-12">
+    <h4 class="title_custom">Who can apply for super visa insurance?</h4>
+    <p>Effective from January 1 to December 31, 2020<br> Your child or grandchild may use the following income scale to assess their ability to meet the income requirements.</p>
+    <p>Low Income Cut-Off (LICO) Size of Family Unit Minimum necessary income</p>
+    <p><strong>Low Income Cut-Off (LICO)</strong></p>
+    <table>
+    <tbody>
+    <tr>
+    <td>Size of Family Unit</td>
+    <td>Minimum necessary income</td>
+    </tr>
+    <tr>
+    <td>1 person(child or grandchild)</td>
+    <td>$25,921</td>
+    </tr>
+    <tr>
+    <td>2 persons</td>
+    <td>$32,270</td>
+    </tr>
+    <tr>
+    <td>3 persons</td>
+    <td>$39,672</td>
+    </tr>
+    <tr>
+    <td>4 persons</td>
+    <td>$48,167</td>
+    </tr>
+    <tr>
+    <td>5 persons</td>
+    <td>$54,630</td>
+    </tr>
+    <tr>
+    <td>6 persons</td>
+    <td>$61,613</td>
+    </tr>
+    <tr>
+    <td>7 persons</td>
+    <td>$68,598</td>
+    </tr>
+    <tr>
+    <td>More than 7 persons, for each additional person, add</td>
+    <td>$6,985</td>
+    </tr>
+    </tbody>
+    </table>
+    <h4 class="title_custom">Disclaimer</h4>
+    <p><strong>Disclaimer:</strong> This information is publicly available at CIC's website. Punjab insurance is not responsible for any changes or modifications. We will try to update this page as soon as we receive new information. Please check CIC for any recent modifications.</p>
+    <p>Date modified: 2021-01-10</p>
+    <br>
+    </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}

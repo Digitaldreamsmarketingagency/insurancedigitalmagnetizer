@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="t-nn">Our wonderful Team</div>
+
+<div class="row-a">
+    <div class="p-grid-p">
+        {% for i in range(8) %}
+        <div class="card-p">
+            <div class="p-img"></div>
+            <div class="p-name"> Name Singh</div>
+            <div class="p-positioning">HR Head</div>
+            <div class="p-ph-no">+1 99999 99999</div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="section-padding-top">
+    <div class="container-fluid formcontent">
+    <div class="row lifeinsbgimg bbyy">
+    <div class="col-md-6 col-lg-6 col-xl-7 paddingzero">
+    <div class="subhead"><h3>RRSP and TFSA</h3></div>
+    </div>
+    <div class="col-md-6 col-lg-6 col-xl-5 paddingzero">
+    <div class="formcwell clearfix">
+    <div class="text-center formhead">
+    <h4>RRSP and TFSA</h4>
+    <p></p>
+    <hr>
+    </div>
+    <form method="post" accept-charset="utf-8" id="rrspinsform" action="/store-data/3"><div style="display:none;">value="POST"></div> <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="tname">Name <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="tname" id="tname" aria-describedby="tname_status">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="contact_email">Email <span class="star">*</span></label>
+    <input required type="email" class="form-control form-design" name="contact_email" id="contact_email" aria-describedby="contact_email_status">
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="tphone">Phone <span class="star">*</span></label>
+    <input required type="number" class="form-control form-design" name="tphone" id="tphone" aria-describedby="tphone_status">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6">
+    <div class="form-group has-feedback">
+    <label for="currentrrsp">Current RRSP Investments ($) <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="currentrrsp" id="currentrrsp" aria-describedby="currentrrsp_status">
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group has-feedback">
+    <label for="annualrrsp">Annual RRSP contribution <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="annualrrsp" id="annualrrsp" aria-describedby="annualrrsp_status">
+    </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group has-feedback">
+    <label for="annual_rate_of_return">Anticipated annual rate of return <span class="star">*</span></label>
+    <input required type="text" class="form-control form-design" name="annual_rate_of_return" id="annual_rate_of_return" aria-describedby="annual_rate_of_return_status">
+    </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group has-feedback">
+    <label for="retirement">Number of years to retirement </label>
+    <input required type="number" class="form-control form-design" name="retirement" id="retirement" aria-describedby="retirement_status">
+    </div>
+    </div>
+    <div class="col-md-12">
+    <div class="clearfix"></div>
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <noscript><p style="color: red;">Please enable JavaScript to continue</p> </noscript>
+    <div id="email_error_loc"></div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6">
+    <input type="submit" style="height: 40px;" id="rrspinssubmit" class="readmore-blue submit-form" value="Get Quote">
+    </div>
+    </form> </div>
+    </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+    <div class="container formcontent">
+    <div class="row">
+    <div class="col-md-12"><br>
+    <p>There has been always a discussion about which one is superior, the TFSA vs RRSP. Who knows at 30 or 40 years old how much money they will have 25 or 35 years later, or what the tax system will be like many years from now?</p>
+    <p>Both are great tools for saving for us Canadians. Given that this year (and almost time the RRSP contribution deadline for 2014- March 3, in case you forgot), more people are thinking about the TFSA and the RRSP.
+    In an perfect world, one could max out both the RRSP and the TFSA. That would be perfect. Though in the real world, life happens, and it is oftentimes very difficult to be able to borrow up the money to be able to max out both the RRSP and the TFSA.</p><p>Generally, the amount you can contribute to your own RRSPs or your spouse's RRSPs, or your common-law partner's RRSPs for a given tax year without tax implications is determined by your RRSP deduction limit.
+    </p>
+    <h4 class="title_custom">Tax tips for retirement income earners</h4>
+    <p>An RRSP is a retirement savings plan that you establish, that we register, and to which you or your spouse or common-law partner contribute. Deductible RRSP contributions can be used to reduce your tax.</p>
+    <p>The Tax-Free Savings Account (TFSA) is a flexible, registered, general-purpose savings vehicle that allows Canadians to earn tax-free investment income to more easily meet lifetime savings needs.</p>
+    <p>In my opinion, the RRSP and the TFSA are methods to save money but with differentials. They both compete for your money and attention. They are both good, but as we all know, one can be better for you than the other. TFSAs and RRSPs are tools that can hold a variety of investments. For investors who complain about having to convert RRSPs to RRIFs at age 71 - and then being forced to take out a minimum each year after - TFSAs can be great alternatives.</p>
+    <p>You can give call our expert advisors to know more about RRSP and TFSA. It doesn't matter if you missed the deadline of RRSP this year. It is never late to start and plan to save money for yourself.</p>
+    <br>
+    </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}

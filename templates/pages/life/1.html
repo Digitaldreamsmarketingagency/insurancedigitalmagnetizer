@@ -1,0 +1,338 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="section-padding-top">
+    <div class="container-fluid formcontent">
+        <div class="row lifeinsbgimg bbgg">
+            <div class="col-md-6 col-lg-6 col-xl-7 paddingzero">
+                <div class="subhead">
+                    <h3>Life Insurance</h3>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-5 paddingzero">
+                <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+                <div class="formcwell clearfix">
+                    <div class="text-center formhead">
+                        <h4>Whole Life Insurance</h4>
+                        <p></p>
+                        <hr>
+                    </div>
+                    <form method="post" accept-charset="utf-8" id="lifeinsform" action="/store-data/5">
+                        <div style="display:none;">value="POST"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="instype">Insurance Type <span class="star">*</span></label>
+                                <select class="form-control" name="instype" id="instype"
+                                    aria-describedby="instype_status">
+                                    <option>Please choose</option>
+                                    <option value="Term Life Insurance">Term Life Insurance</option>
+                                    <option value="Whole Life Insurance" selected="">Whole Life Insurance</option>
+                                    <option value="Mortgage Insurance">Mortgage Insurance</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="pi">Product Type <span class="star">*</span></label>
+                                <select class="form-control" name="pi" id="pi" aria-describedby="pi_status">
+                                    <option value="">Please choose</option>
+                                    <option value="Life Pay">Life Pay</option>
+                                    <option value="Pay to 65">Pay to 65</option>
+                                    <option value="25 to Pay">25 to Pay</option>
+                                    <option value="20 to Pay">20 to Pay</option>
+                                    <option value="15 to Pay">15 to Pay</option>
+                                    <option value="Quick Pay">Quick Pay</option>
+                                    <option value="Adjustable Life Pay">Adjustable Life Pay</option>
+                                    <option value="Adjustable Pay to 65">Adjustable Pay to 65</option>
+                                    <option value="Adjustable 10-20 Pay">Adjustable 10-20 Pay</option>
+                                    <option value="Unique Whole Life">Unique Whole Life</option>
+                                    <option value="All Products">All Products</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="faceamount">Face Amount <span class="star">*</span></label>
+                                <select class="form-control" name="faceamount" id="faceamount"
+                                    aria-describedby="faceamount_status">
+                                    <option value="">Please choose</option>
+                                    <option value="25000">$25,000</option>
+                                    <option value="30000">$30,000</option>
+                                    <option value="35000">$35,000</option>
+                                    <option value="40000">$40,000</option>
+                                    <option value="45000">$45,000</option>
+                                    <option value="50000">$50,000</option>
+                                    <option value="55000">$55,000</option>
+                                    <option value="60000">$60,000</option>
+                                    <option value="65000">$65,000</option>
+                                    <option value="70000">$70,000</option>
+                                    <option value="75000">$75,000</option>
+                                    <option value="80000">$80,000</option>
+                                    <option value="85000">$85,000</option>
+                                    <option value="90000">$90,000</option>
+                                    <option value="95000">$95,000</option>
+                                    <option value="100000" selected="">$100,000</option>
+                                    <option value="125000">$125,000</option>
+                                    <option value="150000">$150,000</option>
+                                    <option value="175000">$175,000</option>
+                                    <option value="200000">$200,000</option>
+                                    <option value="225000">$225,000</option>
+                                    <option value="250000">$250,000</option>
+                                    <option value="275000">$275,000</option>
+                                    <option value="300000">$300,000</option>
+                                    <option value="325000">$325,000</option>
+                                    <option value="350000">$350,000</option>
+                                    <option value="375000">$375,000</option>
+                                    <option value="400000">$400,000</option>
+                                    <option value="425000">$425,000</option>
+                                    <option value="450000">$450,000</option>
+                                    <option value="475000">$475,000</option>
+                                    <option value="500000">$500,000</option>
+                                    <option value="550000">$550,000</option>
+                                    <option value="600000">$600,000</option>
+                                    <option value="650000">$650,000</option>
+                                    <option value="700000">$700,000</option>
+                                    <option value="750000">$750,000</option>
+                                    <option value="800000">$800,000</option>
+                                    <option value="850000">$850,000</option>
+                                    <option value="900000">$900,000</option>
+                                    <option value="950000">$950,000</option>
+                                    <option value="1000000">$1,000,000</option>
+                                    <option value="1250000">$1,250,000</option>
+                                    <option value="1500000">$1,500,000</option>
+                                    <option value="1750000">$1,750,000</option>
+                                    <option value="2000000">$2,000,000</option>
+                                    <option value="2250000">$2,250,000</option>
+                                    <option value="2500000">$2,500,000</option>
+                                    <option value="2750000">$2,750,000</option>
+                                    <option value="3000000">$3,000,000</option>
+                                    <option value="3500000">$3,500,000</option>
+                                    <option value="4000000">$4,000,000</option>
+                                    <option value="4500000">$4,500,000</option>
+                                    <option value="5000000">$5,000,000</option>
+                                    <option value="6000000">$6,000,000</option>
+                                    <option value="7000000">$7,000,000</option>
+                                    <option value="8000000">$8,000,000</option>
+                                    <option value="9000000">$9,000,000</option>
+                                    <option value="10000000">$10,000,000</option>
+                                    <option value="11000000">$11,000,000</option>
+                                    <option value="12000000">$12,000,000</option>
+                                    <option value="13000000">$13,000,000</option>
+                                    <option value="14000000">$14,000,000</option>
+                                    <option value="15000000">$15,000,000</option>
+                                    <option value="16000000">$16,000,000</option>
+                                    <option value="17000000">$17,000,000</option>
+                                    <option value="18000000">$18,000,000</option>
+                                    <option value="19000000">$19,000,000</option>
+                                    <option value="20000000">$20,000,000</option>
+                                    <option value="21000000">$21,000,000</option>
+                                    <option value="22000000">$22,000,000</option>
+                                    <option value="23000000">$23,000,000</option>
+                                    <option value="24000000">$24,000,000</option>
+                                    <option value="25000000">$25,000,000</option>
+                                    <option value="26000000">$26,000,000</option>
+                                    <option value="27000000">$27,000,000</option>
+                                    <option value="28000000">$28,000,000</option>
+                                    <option value="29000000">$29,000,000</option>
+                                    <option value="30000000">$30,000,000</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="smoker">Are you a smoker? <span class="star">*</span></label>
+                                <select class="form-control" name="smoker" id="smoker" aria-describedby="smoker_status">
+                                    <option value="">Please choose</option>
+                                    <option value="smoker">Smoker</option>
+                                    <option value="non=smoker" selected="">Non Smoker</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="gender">Gender <span class="star">*</span></label>
+                                <select class="form-control" name="gender" id="gender" aria-describedby="gender_status">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="Female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="firstname">First Name <span class="star">*</span></label>
+                                <input required type="text" class="form-control form-design" name="firstname" id="firstname"
+                                    aria-describedby="firstname_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="lastname">Last Name <span class="star">*</span></label>
+                                <input required type="text" class="form-control form-design" name="lastname" id="lastname"
+                                    aria-describedby="lastname_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="contact_email">Email <span class="star">*</span></label>
+                                <input required type="email" class="form-control form-design" name="contact_email"
+                                    id="contact_email" aria-describedby="contact_email_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="sphone">Telephone <span class="star">*</span></label>
+                                <input required type="number" class="form-control form-design" name="sphone" id="sphone"
+                                    aria-describedby="sphone_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="DOB">Date of birth <span class="star">*</span></label>
+                                <input required type="date" class="form-control form-design hasDatepicker" name="DOB" id="DOB"
+                                    aria-describedby="DOB_status">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="province" class="control-label">Your Location <span
+                                        class="star">*</span></label>
+                                <select class="form-control" name="province" id="province"
+                                    aria-describedby="province_status">
+                                    <option value="">Select Province</option>
+                                    <option value="British Columbia">British Columbia</option>
+                                    <option value="Alberta">Alberta</option>
+                                    <option value="Saskatchewan">Saskatchewan</option>
+                                    <option value="Northwest Territories">Northwest Territories</option>
+                                    <option value="Yukon">Yukon</option>
+                                    <option value="Nunavut">Nunavut</option>
+                                    <option value="Manitoba">Manitoba</option>
+                                    <option value="Ontario" selected="">Ontario</option>
+                                    <option value="Quebec">Quebec</option>
+                                    <option value="Nova Scotia">Nova Scotia</option>
+                                    <option value="New Brunswick">New Brunswick</option>
+                                    <option value="Prince Edward Island">Prince Edward Island</option>
+                                    <option value="Newfoundland &amp; Labrador">Newfoundland &amp; Labrador</option>
+                                    <option value="All Provinces">All Provinces</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group has-feedback">
+                                <label for="paymentmode" class="control-label">Payment mode <span
+                                        class="star">*</span></label>
+                                <select class="form-control" name="paymentmode" id="paymentmode"
+                                    aria-describedby="paymentmode_status">
+                                    <option value="annual">Annual</option>
+                                    <option value="semi annual">Semi annual</option>
+                                    <option value="Quarterly">Quarterly</option>
+                                    <option value="Monthly">Monthly</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <noscript>
+                                <p style="color: red;">Please enable JavaScript to continue</p>
+                            </noscript>
+                            <div id="email_error_loc"></div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <input required id="lifeinssubmit" type="submit" class="submit-form" value="Compare Rates" style="text-align: center;height:40px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="container  formcontent">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="title_custom">Why life insurance?</h4>
+                <p><b>Life insurance</b> is a contract that pledges payment of an amount to the person assured (or his
+                    nominee) on the happening of the event insured against.</p>
+                <p>The contract is valid for payment of the insured amount during:</p>
+                <ul>
+                    <li>The date of maturity, or</li>
+                    <li>Specified dates at periodic intervals, or</li>
+                    <li>Unfortunate death, if it occurs earlier.</li>
+                </ul>
+                <p>Among other things, the contract also provides for the payment of premium periodically to the
+                    Corporation by the policyholder. Life insurance is universally acknowledged to be an institution,
+                    which eliminates 'risk',substituting certainty for uncertainty and comes to the timely aid of the
+                    family in the unfortunate event of death of the breadwinner.</p>
+                <p class="bluehead"><a href="https://www.punjabinsurance.ca/common-mistakes-life-insurance-plan"><span
+                            class="fa fa-hand-o-right" aria-hidden="true"></span> Common mistakes - Life Insurance.
+                        Learn more.....</a></p>
+                <p>By and large, life insurance is civilisation's partial solution to the problems caused by death. Life
+                    insurance, in short, is concerned with two hazards that stand across the life-path of every person:
+                </p>
+                <ol>
+                    <li>That of dying prematurely leaving a dependent family to fend for itself.</li>
+                    <li>That of living till old age without visible means of support.</li>
+                </ol>
+                <h4 class="title_custom">Get Competing Term Life Insurance Rates</h4>
+                <p>At Punjab Insurance, find the best <a
+                        href="https://www.punjabinsurance.ca/term-life-insurance-quotes-canada">term life insurance</a>
+                    rates online. Shop and get personalized life insurance quotes for you today. Until a few years ago,
+                    life insurance was not a subject many of us preferred to talk about. It was associated with death
+                    and thus the sentiments involved, often prevented discussion. Today however scenario has changed.
+                    Life insurance , as a concept, has earned a different meaning altogether. Yes it is about life and
+                    health, but it is also about money. Life insurance has rapidly emerged as a versatile financial
+                    tool. Now when we look at life insurance quotes, we are talking about investment figures. So
+                    irrespective of how you take it, insurance is something, which at the end of the day, we'd all like
+                    to have. </p>
+                <p class="bluehead"><a href="https://www.punjabinsurance.ca/review-your-life-insurance-policy"><span
+                            class="fa fa-hand-o-right" aria-hidden="true"></span> Your Policy</a></p>
+                <p class="bluehead"><a href="https://www.punjabinsurance.ca/life-insurance-for-minor-children"><span
+                            class="fa fa-hand-o-right" aria-hidden="true"></span> For Kids</a></p>
+                <p class="bluehead"><a href="https://www.punjabinsurance.ca/group-life-insurance"><span
+                            class="fa fa-hand-o-right" aria-hidden="true"></span> My Benefits</a></p>
+                <h4 class="title_custom">Life Insurance Benefits</h4>
+                <p>There are a number of insurance companies in Canada which offer life insurance packages. You have
+                    three vital reasons to contact either of them for quotes. One, with life insurance policy you are
+                    securing your child's tomorrow. This is essentially where the investment positives of insurance come
+                    in. Secondly, investment in a life insurance policy makes your retirement lavish. You have less to
+                    bother and more to relax. Third of course is the eventuality of untimely death. As much as we would
+                    not like to think about it, this could happen and thus a safety cover will only help. Additionally,
+                    a life insurance policy also helps an effective redesign of the tax structure.</p>
+                <p>The listed are generic benefits of a life insurance policy, however depending upon your situation and
+                    requirements; you can opt from the various insurance options available. For example consider the
+                    case of mortgage life insurance. As per this insurance policy, if the policyholder dies, policy will
+                    take care of the outstanding repayment mortgage. So depending upon what needs you'd like your policy
+                    to cater to, there is a viable option. Most of the Canada insurance policies fall under two
+                    categories viz., term life insurance and permanent life insurance. Term life insurance policy shall
+                    take care of any temporal requirements. While the permanent life insurance policies, as the name
+                    suggest, are for a lifetime. Top quotes for the various policies, as offered by the most reputed
+                    Canada insurance companies, are provided by Punjab Insurance. As an insurance company, Punjab
+                    Insurance provides a no obligation free quote. The insurance quote is complemented with detailed
+                    info on the policy nuances. A comparison is thus enabled, which helps you opt for the top benefits,
+                    at of course, the most reasonable cost.</p>
+                <h4 class="title_custom">Life Insurance Quotes</h4>
+                <p>Get lowest life insurance quotes from Punjab Insurance Inc. We will provide you customized policies
+                    as per your requirements. Moreover in some term life insurance policies you can get back your money
+                    after the term is over.</p>
+                <h4 class="title_custom">Types of Life Insurance</h4>
+                <p>You can choose from different types of life insurance policies i.e. permanent life insurance, <a
+                        href="https://www.punjabinsurance.ca/term-life-insurance-quotes-canada">term life insurance</a>
+                    or universal life insurance as per your insurance requirements.</p>
+                <h4 class="title_custom">Life Insurance in Canada</h4>
+                <p>Most of the Canada insurance policies fall under two categories viz., term life insurance and
+                    permanent life insurance. Term life insurance policy shall take care of any temporal requirements.
+                    While the permanent life insurance policies, as the name suggest, are for a lifetime. Top quotes for
+                    the various policies, as offered by the most reputed Canada insurance companies, are provided by
+                    Punjab Insurance. As an insurance company, Punjab Insurance provides a no obligation free life
+                    insurance quote. The insurance quote is complemented with detailed info on the policy nuances. A
+                    comparison is thus enabled, which helps you opt for the top benefits, at of course, the most
+                    reasonable cost. So now you have the chance to get the most reliable life insurance policy for you
+                    at the most affordable cost.</p>
+                <h4 class="title_custom">Get the life insurance coverage you need.</h4>
+                <p>Whether you're single or married, just started a family or you're ready to retire, you can be sure
+                    you have the right insurance with Insure Right. We serve in Life insurance BC,Life insurance
+                    Calgary, Ontario, Alberta, Quebec and in most parts of Canada.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
